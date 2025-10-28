@@ -54,7 +54,7 @@ thead {
 
 @media (max-width: 430px) {
   .table-wrapper {
-    height: 300px;
+    max-height: 300px;
   }
 }
 
