@@ -1,0 +1,12 @@
+span input {
+  height: 25px;
+  padding: 0 5px;
+  font-size: 16px;
+}
+
+
+.containerInputs {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}

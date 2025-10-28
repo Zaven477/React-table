@@ -1,0 +1,46 @@
+.headerApp {
+  background: #3cb371;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.container-tabs {
+  height: calc(100vh - 60px);
+  background: #3cb371;
+  width: 200px;
+  overflow-y: auto;
+  position: fixed;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container-tabs.open {
+  transform: translateX(0);
+}
+
+.sidebar-btn.active {
+  background: #32cd32;
+}
+
+.sidebar-btn {
+  display: block;
+  width: 200px;
+  padding: 10px 0 10px 20px;
+  background: #3cb371;
+  border: none;
+  cursor: pointer;
+  color: white;
+  text-align: left;
+}

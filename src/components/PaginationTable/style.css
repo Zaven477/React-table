@@ -1,0 +1,64 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.inputPages {
+  width: 80px;
+  height: 21px;
+  padding-left: 3px;
+  font-size: 17px;
+}
+
+.btnPage {
+  height: 25px;
+  width: 25px;
+  background: #3cb371;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.containerBtnPages {
+  display: flex;
+  gap: 3px;
+}
+
+.selectInput {
+  height: 25px;
+}
+
+.textPages {
+  font-size: 17px;
+}
+
+.textGoTo {
+  font-size: 17px;
+}
+
+.textShow {
+  font-size: 17px;
+}
+
+.currentContainer {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.containerShowInput {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+@media (max-width: 760px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
