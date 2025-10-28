@@ -50,3 +50,11 @@ thead {
   position: sticky;
   top: 0;
 }
+
+
+@media (max-width: 430px) {
+  .table-wrapper {
+    height: 300px;
+  }
+}
+
