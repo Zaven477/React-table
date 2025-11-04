@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./style.css";
 import { Tabs, type CurrentTabs, type TabType } from "./types";
 import { Buttons } from "./Buttons";
@@ -32,6 +32,17 @@ export const Header = () => {
   const openSidebar = () => {
     setOpen((prev) => !prev);
   };
+
+  useEffect(() => {
+    const savedTab = localStorage.getItem("currentTab");
+    if (savedTab) {
+      setActiveTab(savedTab as TabType);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("currentTab", activeTab);
+  }, [activeTab]);
 
   return (
     <>

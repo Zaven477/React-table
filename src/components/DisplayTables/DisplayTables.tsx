@@ -7,7 +7,7 @@ export const DisplayTables = ({ activeTab }: DisplayTablesProps) => {
   const tabs = {
     sorting: SortTable(),
     filtration: FilterTable(),
-    pagination: PaginationTable()
+    pagination: PaginationTable(),
   };
 
   return <>{tabs[activeTab]}</>;
